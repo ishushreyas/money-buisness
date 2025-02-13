@@ -7,7 +7,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Load known face(s) once during startup
-known_image = face_recognition.load_image_file("./face_recognition_service/known_person.jpg")
+known_image = face_recognition.load_image_file("./known_person.jpg")
 known_face_encoding = face_recognition.face_encodings(known_image)[0]
 known_face_names = ["Known Person"]
 
